@@ -1,0 +1,11 @@
+.nuotrauka img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.slider {
+  top: 105px;
+  height: 658px;
+  position: relative;
+}

@@ -1,0 +1,59 @@
+header {
+  width: 100%;
+  background-color: rgba(225, 225, 225, 0.5);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.top-header {
+  text-align: right;
+  padding: 10px 0;
+  i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #c6c6c6;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.bottom-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  .logo {
+    width: 30%;
+    img {
+      height: 41px;
+      width: 226px;
+    }
+  }
+  .meniu {
+    width: 70%;
+    a {
+      padding: 10px 22px;
+      text-decoration: none;
+      font-size: 19px;
+      font-weight: 600;
+      color: #313131;
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  .registration-button {
+    border: 0;
+    padding: 10px 35px;
+    border-radius: 25px;
+    background-color: #8ac926;
+    font-size: 14px;
+    color: white;
+    font-weight: 600;
+    margin-left: 25px;
+    cursor: pointer;
+    &:hover{
+      background-color: #a1e026;
+    }
+
+    }
+  }

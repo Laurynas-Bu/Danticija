@@ -1,0 +1,32 @@
+.nuotrauka {
+  img {
+    width:100%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.content {
+  height: 763px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .slider {
+    position: relative;
+    left: 50px;
+    letter-spacing: 1px;
+
+    h2 {
+      color: $skyblue;
+      font-size: 43px;
+      padding-bottom: 35px;
+      line-height: 115%;
+    }
+      p {
+        font-size: 22px;
+        padding-bottom: 43px;
+      }
+
+  }
+}
