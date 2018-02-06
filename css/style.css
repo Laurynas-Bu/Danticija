@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+/* line 1, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 header {
   width: 100%;
   background-color: rgba(225, 225, 225, 0.5);
@@ -7,40 +8,48 @@ header {
   z-index: 1;
 }
 
+/* line 8, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .top-header {
   text-align: right;
   padding: 10px 0;
 }
 
+/* line 11, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .top-header i {
   margin-right: 10px;
   font-size: 1.5em;
   color: #c6c6c6;
 }
 
+/* line 15, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .top-header i:last-of-type {
   margin-right: 0;
 }
 
+/* line 20, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
+/* line 24, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .logo {
   width: 30%;
 }
 
+/* line 26, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .logo img {
   height: 41px;
   width: 226px;
 }
 
+/* line 31, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .meniu {
   width: 70%;
 }
 
+/* line 33, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .meniu a {
   padding: 10px 22px;
   text-decoration: none;
@@ -49,14 +58,16 @@ header {
   color: #313131;
 }
 
+/* line 39, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .meniu a:hover {
   color: #ffffff;
 }
 
+/* line 44, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .registration-button {
   border: 0;
   padding: 10px 35px;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: #8ac926;
   font-size: 14px;
   color: white;
@@ -65,16 +76,19 @@ header {
   cursor: pointer;
 }
 
+/* line 54, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
 .bottom-header .registration-button:hover {
   background-color: #a1e026;
 }
 
+/* line 2, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
 .nuotrauka img {
   width: 100%;
   position: absolute;
   z-index: -1;
 }
 
+/* line 8, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
 .content {
   height: 763px;
   position: relative;
@@ -83,12 +97,14 @@ header {
   justify-content: flex-start;
 }
 
+/* line 15, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
 .content .slider {
   position: relative;
   left: 50px;
   letter-spacing: 1px;
 }
 
+/* line 20, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
 .content .slider h2 {
   color: #008be9;
   font-size: 43px;
@@ -96,22 +112,112 @@ header {
   line-height: 115%;
 }
 
+/* line 26, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
 .content .slider p {
   font-size: 22px;
   padding-bottom: 43px;
 }
 
+/* line 30, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.content .slider .cta-button1 {
+  border: 0;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background-color: #8ac926;
+  width: 196px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* line 41, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.content .slider .cta-button1:hover {
+  background-color: #a1e026;
+}
+
+/* line 45, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.content .slider .cta-button2 {
+  border: solid 2px #a1e026;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background-color: transparent;
+  width: 196px;
+  height: 50px;
+  font-size: 17px;
+  color: #525252;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+/* line 57, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.content .slider .cta-button2:hover {
+  background-color: #a1e026;
+  color: white;
+}
+
+/* line 65, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin: 30px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 73, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .service-list {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+/* line 79, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .service-list .icon {
+  text-align: center;
+}
+
+/* line 81, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .service-list .icon img {
+  height: 117px;
+  width: 115px;
+}
+
+/* line 85, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .service-list .icon .name {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* line 91, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/section.scss */
+.services .service-list .icon .price {
+  font-size: 20px;
+  color: #6A4C93;
+}
+
+/* line 9, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* line 15, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/style.scss */
 body {
   font-family: 'Roboto', sans-serif;
 }
 
+/* line 18, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/style.scss */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+/*# sourceMappingURL=../css/style.map */
