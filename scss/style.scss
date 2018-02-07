@@ -1,12 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 
-@import url(http://allfont.net/allfont.css?fonts=comic-sans-ms);
-
-@import "layout/header";
-
-@import "_variables";
-
-@import "layout/section";
+@import url('http://allfont.net/allfont.css?fonts=comic-sans-ms');
 
 *{
   padding: 0;
@@ -22,3 +16,9 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+@import "variables";
+
+@import "layout/header";
+
+@import "layout/section";
