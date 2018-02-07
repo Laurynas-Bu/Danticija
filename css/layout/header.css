@@ -1,4 +1,4 @@
-/* line 1, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 1, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 header {
   width: 100%;
   background-color: rgba(225, 225, 225, 0.5);
@@ -7,48 +7,48 @@ header {
   z-index: 1;
 }
 
-/* line 8, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 8, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .top-header {
   text-align: right;
   padding: 10px 0;
 }
 
-/* line 11, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 11, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .top-header i {
   margin-right: 10px;
   font-size: 1.5em;
   color: #c6c6c6;
 }
 
-/* line 15, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 15, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .top-header i:last-of-type {
   margin-right: 0;
 }
 
-/* line 20, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 20, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
 }
 
-/* line 24, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 24, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .logo {
   width: 30%;
 }
 
-/* line 26, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 26, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .logo img {
   height: 41px;
   width: 226px;
 }
 
-/* line 31, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 31, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .meniu {
   width: 70%;
 }
 
-/* line 33, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 33, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .meniu a {
   padding: 10px 22px;
   text-decoration: none;
@@ -57,12 +57,12 @@ header {
   color: #313131;
 }
 
-/* line 39, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 39, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .meniu a:hover {
   color: #ffffff;
 }
 
-/* line 44, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 44, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .registration-button {
   border: 0;
   padding: 10px 35px;
@@ -75,7 +75,7 @@ header {
   cursor: pointer;
 }
 
-/* line 54, C:/Users/Lau/Desktop/Projektai/Front-end/Php Storm/Danticija/scss/layout/header.scss */
+/* line 54, C:/Users/L/Desktop/Dabar/Front-End/Php-storm/SvetaineDant/scss/layout/header.scss */
 .bottom-header .registration-button:hover {
   background-color: #a1e026;
 }
