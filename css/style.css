@@ -2,6 +2,8 @@
 
 @import url("http://allfont.net/allfont.css?fonts=comic-sans-ms");
 
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+
 * {
     padding: 0;
     margin: 0;
@@ -65,7 +67,7 @@ header {
     text-decoration: none;
     font-size: 19px;
     font-weight: 600;
-    color: #313131;
+    color: #363636;
 }
 
 .bottom-header .meniu a:hover {
@@ -101,7 +103,6 @@ header {
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .content .slider {
@@ -136,7 +137,7 @@ header {
 }
 
 .content .slider .cta-button1:hover {
-    background-color: #8ac926;
+    background-color: #a1e026;
 }
 
 .content .slider .cta-button2 {
@@ -167,9 +168,9 @@ header {
 .services .title {
     font-size: 50px;
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 0 100px 0;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #363636;
     letter-spacing: 2px;
 }
 
@@ -181,7 +182,7 @@ header {
 .services .service-list .service-item {
     background-color: white;
     width: 249px;
-    color: #2b2b2b;
+    color: #363636;
 }
 
 .services .service-list .service-item:hover {
@@ -213,14 +214,14 @@ header {
     padding: 15px 0 30px 0;
     font-weight: bold;
     text-align: center;
-    font-family: 'Comic Sans MS', arial;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 
 .services .service-list .price .normal {
     font-size: 31px;
 }
 
-/* Trecia Sekcija */
+/* Trecia Sekcija - Nuotrauka */
 .personal {
     background-color: #ebebeb;
 }
@@ -228,9 +229,9 @@ header {
 .title {
     font-size: 50px;
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 0 100px 0;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #363636;
 }
 
 .specia-list {
@@ -243,14 +244,174 @@ header {
     width: 263px;
     height: 267px;
     overflow: hidden;
-    border-radius: 225px;
-}
-
-.specia-list .specialists:hover {
-    background-color: rgba(138, 201, 38, 0.8);
-}
-
-.specia-list .specialists .photo {
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
 }
+
+.specia-list .specialists:hover {
+    background-color: #8ac926;
+    cursor: pointer;
+}
+
+.specia-list .specialists:hover .photo {
+    opacity: 0.11;
+}
+
+.specia-list .specialists:hover .blokas {
+    opacity: 1;
+    filter: invert(1);
+    color: black;
+}
+
+.specia-list .specialists .blokas {
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    opacity: 0;
+    padding-top: 15px;
+}
+
+.specia-list .specialists .blokas .tekstas {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+/* Trecia Sekcija - Tekstas */
+.spec-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.spec-section .information {
+    align-self: center;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #363636;
+}
+
+.spec-section .information .name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.spec-section .information .job-type {
+    font-size: 15px;
+    font-weight: 700;
+    color: #008be9;
+    padding: 3px 0 10px 0;
+}
+
+.spec-section .information .tel-nr {
+    font-weight: 600;
+}
+
+.spec-section .information .social {
+    font-size: 27px;
+    color: #c6c6c6;
+}
+
+.spec-section .information .social i {
+    padding: 0 2px;
+}
+
+.spec-section .information .social i:hover {
+    color: #008be9;
+    cursor: pointer;
+}
+
+/* slider */
+.CSSgal {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  /* Or set a fixed height */
+}
+
+.CSSgal .slider {
+    height: 100%;
+    white-space: nowrap;
+    transition: 0.8s;
+    /* SLIDES */
+}
+
+.CSSgal .bullets {
+    position: relative;
+    bottom: 0;
+    padding: 100px 0 50px 0;
+    width: 100%;
+    text-align: center;
+    /* NAVIGATION */
+}
+
+.CSSgal .bullets a {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: #c6c6c6;
+}
+
+.CSSgal .bullets a:hover a {
+    background-color: #c6c6c6;
+}
+
+/* ALL: */
+.CSSgal > s:target ~ .bullets > {
+    background: #008be9;
+}
+
+/* ACTIVE */
+#s1:target ~ .bullets > *:nth-child(1) {
+    background: #008be9;
+}
+
+#s2:target ~ .bullets > *:nth-child(2) {
+    background: #008be9;
+}
+
+#s3:target ~ .bullets > *:nth-child(3) {
+    background: #008be9;
+}
+
+/* SLIDER ANIMATION POSITIONS */
+#s1:target ~ .slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+
+#s2:target ~ .slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+#s3:target ~ .slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+}
+
+/* More slides? Add here more rules */
+/* YOU'RE THE DESIGNER!
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+.CSSgal .slider h2 {
+  margin-top: 40vh;
+  font-weight: 200;
+  letter-spacing: -0.06em;
+  word-spacing: 0.2em;
+  font-size: 3em; }
+
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 3px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none; }

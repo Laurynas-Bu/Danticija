@@ -13,7 +13,6 @@
   height: 763px;  position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 
   .slider {
     position: relative;
@@ -41,7 +40,7 @@
       font-weight: 600;
       cursor: pointer;
       &:hover {
-        background-color: $green;
+        background-color: #a1e026;
       }
         }
     .cta-button2 {
@@ -58,7 +57,6 @@
       margin-left: 30px;
       &:hover {
         background-color: $green;
-
         color: white;
       }
     }
@@ -73,9 +71,9 @@
   .title {
     font-size: 50px;
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 0 100px 0;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #363636;
     letter-spacing: 2px;
   }
   .service-list {
@@ -85,7 +83,7 @@
     .service-item {
       background-color: white;
       width: 249px;
-      color: #2b2b2b;
+      color: #363636;
       &:hover {
         -webkit-box-shadow: 5px 5px 18px 0 rgba(0,0,0,0.2);
         -moz-box-shadow: 5px 5px 18px 0 rgba(0,0,0,0.2);
@@ -113,7 +111,7 @@
       padding: 15px 0 30px 0;
       font-weight: bold;
       text-align: center;
-      font-family: 'Comic Sans MS', arial;
+      font-family: 'Comic Sans MS', sans-serif;
 
       .normal{
         font-size:31px;
@@ -122,7 +120,7 @@
   }
 }
 
-/* Trecia Sekcija */
+/* Trecia Sekcija - Nuotrauka */
 
 .personal {
   background-color: #ebebeb;
@@ -130,9 +128,9 @@
   .title{
     font-size: 50px;
     text-align: center;
-    padding: 70px 0;
+    padding: 70px 0 100px 0;
     font-weight: 600;
-    color: #2b2b2b;
+    color: #363636;
   }
 
 .specia-list {
@@ -144,13 +142,163 @@
     width: 263px;
     height: 267px;
     overflow: hidden;
-    border-radius: 225px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
     &:hover {
-    background-color: rgba(138, 201, 38, 0.8);
+      background-color: $green;
+      cursor: pointer;
+      .photo {
+        opacity: 0.11;
+      }
+      .blokas {
+        opacity: 1;
+        filter: invert(1);
+        color: black;
+      }
     }
-    .photo {
-      display: flex;
-      justify-content: center;
+    .blokas {
+      position: absolute;
+      text-align: center;
+      align-self: center;
+      opacity: 0;
+      padding-top: 15px;
+
+      .tekstas {
+        font-size: 25px;
+        font-weight: 600;
+        padding: 10px 0;
+      }
     }
   }
 }
+
+/* Trecia Sekcija - Tekstas */
+
+.spec-section {
+  display: flex;
+  flex-direction: column;
+  .information {
+    align-self: center;
+    padding-top: 30px;
+    font-family: 'Open Sans', sans-serif;
+    color: #363636;
+    .name {
+      font-size: 25px;
+      font-weight: 700
+    }
+    .job-type {
+      font-size: 15px;
+      font-weight: 700;
+      color: $skyblue;
+      padding: 3px 0 10px 0;
+    }
+    .tel-nr {
+      font-weight: 600;
+    }
+    .social {
+      font-size: 27px;
+      color: #c6c6c6;
+      i {
+        padding: 0 2px;
+        &:hover {
+          color: $skyblue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* slider */
+
+.CSSgal {
+  position: relative;
+  overflow: hidden;
+  height: 100%; /* Or set a fixed height */
+
+  .slider {
+    height: 100%;
+    white-space: nowrap;
+    transition: 0.8s;
+
+    /* SLIDES */
+
+  }
+  .bullets {
+    position: relative;
+    bottom: 0;
+    padding: 100px 0 50px 0;
+    width: 100%;
+    text-align: center;
+
+    /* NAVIGATION */
+     a {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      line-height: 20px;
+      text-decoration: none;
+      text-align: center;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+       background-color: #c6c6c6;
+       &:hover a{
+         background-color: #c6c6c6;
+       }
+    }
+  }
+}
+  /* ALL: */
+  .CSSgal > s:target ~ .bullets > {
+    background: $skyblue;
+  }
+  /* ACTIVE */
+  #s1:target ~ .bullets > *:nth-child(1) {
+    background: rgb(0, 139, 233);
+  }
+  #s2:target ~ .bullets > *:nth-child(2) {
+    background: rgb(0, 139, 233);
+  }
+  #s3:target ~ .bullets > *:nth-child(3) {
+    background: rgb(0, 139, 233);
+  }
+
+  /* SLIDER ANIMATION POSITIONS */
+  #s1:target ~ .slider {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+  }
+  #s2:target ~ .slider {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+  #s3:target ~ .slider {
+    transform: translateX(-200%);
+    -webkit-transform: translateX(-200%);
+  }
+  /* More slides? Add here more rules */
+
+  /* YOU'RE THE DESIGNER!
+     ____________________
+     All above was mainly to get it working :)
+     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+  .CSSgal {
+  }
+  .CSSgal .slider h2 {
+    margin-top: 40vh;
+    font-weight: 200;
+    letter-spacing: -0.06em;
+    word-spacing: 0.2em;
+    font-size: 3em;
+  }
+  .CSSgal a {
+    border-radius: 50%;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+  }
