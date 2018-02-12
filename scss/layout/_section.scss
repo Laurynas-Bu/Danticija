@@ -213,92 +213,77 @@
   }
 }
 
-/* slider */
+/* Slider */
 
 .CSSgal {
   position: relative;
   overflow: hidden;
   height: 100%; /* Or set a fixed height */
-
-  .slider {
-    height: 100%;
-    white-space: nowrap;
-    transition: 0.8s;
-
-    /* SLIDES */
-
-  }
-  .bullets {
-    position: relative;
-    bottom: 0;
-    padding: 100px 0 50px 0;
-    width: 100%;
-    text-align: center;
-
-    /* NAVIGATION */
-     a {
-      display: inline-block;
-      width: 17px;
-      height: 17px;
-      line-height: 20px;
-      text-decoration: none;
-      text-align: center;
-      -webkit-transition: 0.3s;
-      transition: 0.3s;
-       background-color: #c6c6c6;
-       &:hover a{
-         background-color: #c6c6c6;
-       }
-    }
-  }
 }
-  /* ALL: */
-  .CSSgal > s:target ~ .bullets > {
-    background: $skyblue;
-  }
-  /* ACTIVE */
-  #s1:target ~ .bullets > *:nth-child(1) {
-    background: rgb(0, 139, 233);
-  }
-  #s2:target ~ .bullets > *:nth-child(2) {
-    background: rgb(0, 139, 233);
-  }
-  #s3:target ~ .bullets > *:nth-child(3) {
-    background: rgb(0, 139, 233);
-  }
 
-  /* SLIDER ANIMATION POSITIONS */
-  #s1:target ~ .slider {
-    transform: translateX(0%);
-    -webkit-transform: translateX(0%);
-  }
-  #s2:target ~ .slider {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-  }
-  #s3:target ~ .slider {
-    transform: translateX(-200%);
-    -webkit-transform: translateX(-200%);
-  }
-  /* More slides? Add here more rules */
+/* SLIDER */
 
-  /* YOU'RE THE DESIGNER!
-     ____________________
-     All above was mainly to get it working :)
-     CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+.CSSgal .slider {
+  height: 100%;
+  white-space: nowrap;
+  transition: 0.8s;
+  padding-top:5px ;
+}
 
-  .CSSgal {
-  }
-  .CSSgal .slider h2 {
-    margin-top: 40vh;
-    font-weight: 200;
-    letter-spacing: -0.06em;
-    word-spacing: 0.2em;
-    font-size: 3em;
-  }
-  .CSSgal a {
-    border-radius: 50%;
-    margin: 0 3px;
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: none;
-  }
+/* SLIDES */
+
+.CSSgal .slider > * {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
+  height: 100%;
+  width: 100%;
+  background: none 50% no-repeat;
+  background-size: cover;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+  position: relative;
+  padding: 80px 0 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.CSSgal .bullets > a {
+  width: 16px;
+  height: 16px;
+  text-decoration: none;
+  background: rgb(207, 207, 207);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* NAVIGATION BUTTONS */
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgb(0, 139, 233);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgb(0, 139, 233);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgb(0, 139, 233);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgb(0, 139, 233);}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER!
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal a {
+  border-radius: 50%;
+  margin: 0 6px;
+  text-decoration: none;
+}

@@ -1,0 +1,85 @@
+h6 {
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 40px;
+  position: relative;
+  top: 11px;
+  color: #363636;
+}
+
+.contact{
+  background-color: #f2f2f2;
+}
+
+.kontent {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  .logo-strong {
+    img {
+      margin-bottom: 25px;
+    }
+  }
+  .dentkont {
+    color: #363636;
+    padding: 0 70px;
+
+    .kontinfo {
+      font-family: 'PT Sans', sans-serif;
+      line-height: 30px;
+      font-weight: bolder;
+      color: #434343;
+    }
+    .social {
+      font-size: 25px;
+      color: #c6c6c6;
+      padding: 20px 0;
+      i {
+        padding: 0 3px;
+        &:hover {
+          color: $skyblue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .table {
+    ul {
+      list-style-type: none;
+
+      #name, #email, #subject, #submit{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 12.5px;
+        width: 280px;
+        height: 30px;
+        padding: 12px 20px;
+        margin: 5px 0;
+        border: 1px solid #979796;
+        outline-color: $green;
+        border-radius: 5px;
+        background-color: transparent;
+        color: #979796;
+      }
+      #subject{
+        height: 85px;
+        resize: none;
+        margin-bottom: 2px;
+      }
+      #submit {
+        border-radius: 20px;
+        font-weight: 600;
+        outline: none;
+        height: 35px;
+        line-height: 12.5px;
+        margin-bottom: 40px;
+        &:hover {
+          border: 1px solid white;
+          background-color: $green;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
