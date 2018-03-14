@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Danticija</title>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/modalWindow/modalstyle.css" type="text/css">
+
 
 </head>
 <body>
@@ -22,7 +26,7 @@
                 <a href="#paslaugos">Kainos</a>
                 <a href="#personalas">Personalas</a>
                 <a href="#kontaktai">Kontaktai</a>
-                <button class="registration-button"> Registruotis </button>
+                <button class="regbutton"> Registruotis </button>
             </div>
         </div>
     </div>
@@ -70,7 +74,6 @@
         <s id="s2"></s>
         <s id="s3"></s>
         <div class="slider">
-
             <div>
                 <div class="specia-list">
                     <div class="spec-section">
@@ -216,7 +219,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="specia-list">
                     <div class="spec-section">
@@ -322,9 +324,7 @@
 </div>
 
     <div class="table">
-
         <h6>Turite klausimų?</h6>
-
         <form method="get">
             <ul>
                 <li><input type="text" id="name" name="Name" placeholder="Vardas"/> </li>
@@ -338,5 +338,60 @@
 </div>
 </div>
 </footer>
+
+<div class="container">
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="col-md-12"><span class="close">&times;</span></div>
+            <div class="container">
+                <form id="forma">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="vardas">Vardas</label>
+                                <input type="text" class="form-control" name="Vardas" id="vardas" />
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="pavarde">Pavardė</label>
+                                <input type="text" class="form-control" name="Pavardė" id="pavarde" />
+                            </div>
+
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="mail">El. paštas</label>
+                                <input type="email" class="form-control" name="Elektroninis paštas" id="mail" />
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Tel. nr.</label>
+                                <input type="text" class="form-control" name="Telefono numeris" id="phone" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="col-md-12" id="bandymas">
+                    <button id="addto">Prideti </button>
+                    <button id="cleanto" type="reset"> Isjungti </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="person">
+            <div class="row">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/js.js"></script>
 </body>
 </html>
