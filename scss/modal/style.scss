@@ -22,10 +22,12 @@ body {
   margin: 0 auto;
 }
 
-@import "variables";
+@import "../modal/div1";
 
-@import "layout/header";
+@import "../modal/div2";
 
-@import "layout/section";
+@import "../modal/div3";
 
-@import "layout/footer";
+@import "../modal/div4";
+
+@import "../modal/div5";
