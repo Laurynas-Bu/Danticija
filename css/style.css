@@ -17,17 +17,16 @@ body {
     background-color: #f5f5f5;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 header {
     width: 100%;
     background-color: rgba(225, 225, 225, 0.5);
     position: fixed;
     top: 0;
     z-index: 1;
+}
+.container{
+padding-right: 0;
+padding-left: 0;
 }
 
 .top-header {
@@ -485,4 +484,5 @@ h6 {
         border: 1px solid white;
         background-color: #8ac926;
         color: white;
-        cursor: pointer; }
+        cursor: pointer;
+      }
