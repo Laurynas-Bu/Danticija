@@ -1,20 +1,17 @@
-var modal, btn, span, clean, forma, body, addTo;
+var modal, span, clean, forma, body, addTo;
 
 modal = document.getElementById('myModal');
-btn = document.getElementById(".cta-button1");
 span = document.getElementsByClassName("close")[0];
 clean = document.getElementById('cleanto');
 forma = document.getElementById('forma');
 body = document.querySelector('body');
 addTo = document.getElementById('addto');
 
-$('#button1, #button2').click(function(e) {
-
+$('#regbtn1, #regbtn2').click(function() {
     modal.style.display = "block";
     body.style.overflow = "hidden";
 
 });
-
 
 span.onclick = function() {
     modal.style.display = "none";
