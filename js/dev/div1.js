@@ -1,6 +1,6 @@
 var modal, span, clean, forma, body, addTo;
 
-modal = document.getElementById('myModal');
+modal = document.getElementById('div1');
 span = document.getElementsByClassName("close")[0];
 clean = document.getElementById('cleanto');
 forma = document.getElementById('forma');

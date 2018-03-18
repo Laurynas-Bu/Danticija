@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
 
 
@@ -162,11 +163,11 @@ $(document).ready(function () {
          $picker.data('datepicker').selectDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), 22));
      });
 
-     function uniq(a) {
-         return a.sort().filter(function(item, pos, ary) {
-             return !pos || item != ary[pos - 1];
-         })
-     }
+     // function uniq(a) {
+     //     return a.sort().filter(function(item, pos, ary) {
+     //         return !pos || item != ary[pos - 1];
+     //     })
+     // }
 
 
      function getTimes(data, selectedDay, filter) {

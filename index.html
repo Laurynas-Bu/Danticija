@@ -8,6 +8,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/modalWindow/modalstyle.css" type="text/css">
+    <link rel="stylesheet" href="css/modalWindow/datepicker.css">
 
 
 </head>
@@ -337,11 +338,46 @@
 </div>
 </footer>
 
-<div id="div1">
+<!--Div1-->
+
 <div class="container">
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <div class="col-md-12"><span class="close">&times;</span></div>
+    <div class="col-modal" id="div1">
+        <div class="col-modal-content">
+
+
+        </div>
+    </div>
+</div>
+
+<!--Div2-->
+
+            <div class="col-modal" id="div2">
+                <div class="col-modal-content">
+            <div class="flex">
+                <div class="button-holder">
+                    <div class="laikas">Laikas</div>
+                    <input type="button" class="timeselectButton" id="morning" value="Rytas">
+                    <input type="button" class="timeselectButton" id="noon" value="Vidurdienis">
+                    <input type="button" class="timeselectButton" id="evening" value="Vakaras">
+                    <input type="button" class="timeselectButton selected" id="alltimes" value="Visi">
+                </div>
+
+                <div id="custom-cells"></div>
+                <div id="custom-cells-events">
+                </div>
+
+            </div>
+                </div>
+            </div>
+
+
+
+<!--Div3-->
+
+<div class="container">
+    <div class="col-modal" id="div3">
+        <div class="col-modal-content">
+            <div class="col-sm-12"><span class="close">&times;</span></div>
             <div class="container">
                 <form id="forma">
                     <div class="row">
@@ -386,11 +422,11 @@
         </div>
     </div>
 </div>
-</div>
+
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script src="js/js.js"></script>
+<script src="js/prod/jscript.js"></script>
 </body>
 </html>
