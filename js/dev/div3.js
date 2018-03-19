@@ -1,7 +1,9 @@
-var modal, span, body, addTo;
+var modal, span, clean, forma, body, addTo;
 
 modal = document.getElementById('div1');
 span = document.getElementsByClassName("close")[0];
+clean = document.getElementById('cleanto');
+forma = document.getElementById('forma');
 body = document.querySelector('body');
 addTo = document.getElementById('addto');
 
@@ -14,12 +16,20 @@ $('#regbtn1, #regbtn2').click(function() {
 span.onclick = function() {
     modal.style.display = "none";
     body.style.overflow = "scroll";
+    forma.reset();
 };
+
+clean.addEventListener("click", function() {
+    modal.style.display = "none";
+    forma.reset();
+    body.style.overflow = "scroll";
+});
 
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
         body.style.overflow = "scroll";
+        forma.reset();
     }
 };
 
@@ -80,4 +90,5 @@ function reverse() {
 
     modal.style.display = "none";
     body.style.overflow = "scroll";
+    forma.reset();
 }

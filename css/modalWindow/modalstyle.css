@@ -15,37 +15,38 @@
 /* Modal Content/Box */
 .col-modal-content {
     background-color: #fefefe;
-    margin: 10% auto; /* 15% from the top and centered */
+    margin: 4% auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 1105px;
     height: 533px;
+    border-radius: 8px;
 }
-
-
 
 /* The Close Button */
 .close {
-    width: 2%;
-    color: #aaa;
-    position: relative;
+    width: 1.5%;
+    color: #ffffff;
+    position: absolute;
     font-size: 28px;
     font-weight: bold;
+    opacity: .7;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
+    opacity: 1;
 }
 
 /* Modal Content */
 .col-modal-content {
-    font-family: "Avenir Heavy", "Avenir Light", "Avenir Medium", sans-serif;
+    font-family: "Avenir Medium", sans-serif;
     letter-spacing: 0.1px;
     position: relative;
-    background-color: #fefefe;
+    background-image: url('/images/fonas.png');
+    background-color: white;
     padding: 0;
     border: 1px solid #888;
     width: 1105px;
@@ -54,6 +55,20 @@
     animation-name: animatetop;
     animation-duration: 0.4s
 }
+
+.topHeader {
+    border-radius: 7px 7px 0 0;
+    width: 1103px;
+    height: 83px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ac926;
+    position: relative;
+    bottom: 1px;}
+.topHeader p {
+    font-size: 30px;
+    color: white;}
 
 /* Add Animation */
 @keyframes animatetop {
