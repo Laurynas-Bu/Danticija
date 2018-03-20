@@ -25,29 +25,35 @@ $(document).ready(function () {
         }
     };
 
-    $('.accordionSpec > ul > li:has(ul)').addClass("has-sub");
+    // $('.accordionSpec > ul > li:has(ul)').addClass("has-sub");
+    //
+    // $('.accordionSpec > ul > li > a').click(function () {
+    //
+    //     var checkElement = $(this).next();
+    //
+    //     $('.accordionSpec li').removeClass('active');
+    //     $(this).closest('li').addClass('active');
+    //
+    //     if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
+    //         $(this).closest('li').removeClass('active');
+    //         checkElement.slideUp('normal');
+    //     }
+    //
+    //     if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
+    //         $('.accordionSpec ul ul:visible').slideUp('normal');
+    //         checkElement.slideDown('normal');
+    //     }
+    //
+    //     if (checkElement.is('ul')) {
+    //         return false;
+    //     } else {
+    //         return true;
+    //     }
+    // });
 
-    $('.accordionSpec > ul > li > a').click(function () {
 
-        var checkElement = $(this).next();
-
-        $('.accordionSpec li').removeClass('active');
-        $(this).closest('li').addClass('active');
-
-        if ((checkElement.is('ul')) && (checkElement.is(':visible'))) {
-            $(this).closest('li').removeClass('active');
-            checkElement.slideUp('normal');
-        }
-
-        if ((checkElement.is('ul')) && (!checkElement.is(':visible'))) {
-            $('.accordionSpec ul ul:visible').slideUp('normal');
-            checkElement.slideDown('normal');
-        }
-
-        if (checkElement.is('ul')) {
-            return false;
-        } else {
-            return true;
-        }
+    $('.specbutton').click(function(){
+        $('.allspec').slideToggle(400);
     });
+
 });

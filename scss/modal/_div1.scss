@@ -1,91 +1,94 @@
-//https://perishablepress.com/jquery-accordion-menu-tutorial/
-  .accordionSpec, .accordionSpec ul, .accordionSpec  li, .accordionSpec a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    list-style: none;
-    text-decoration: none;
-    line-height: 1;
-    font-size: 1em;
-    position: relative;
-  }
+////https://perishablepress.com/jquery-accordion-menu-tutorial/
+//  .accordionSpec, .accordionSpec ul, .accordionSpec  li, .accordionSpec a {
+//    margin: 0;
+//    padding: 0;
+//    border: 0;
+//    list-style: none;
+//    text-decoration: none;
+//    line-height: 1;
+//    font-size: 1em;
+//    position: relative;
+//  }
+//
+//
+//.accordionSpec {
+//  ul{
+//    width: 250px;
+//    ul {
+//      display: none;
+//      background: #fff;
+//      width: 550px;
+//      display: flex;
+//      a {
+//        padding: 10px 10px 10px 25px;
+//        display: block;
+//        color: #676767;
+//        font-size: 13px;
+//        &:hover {
+//          color: white;
+//        }
+//      }
+//      li {
+//        padding: 0;
+//        border-top: none;
+//        background: #f7f7f7;
+//        background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
+//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+//        background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+//        background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+//      }
+//    }
+//    li{
+//      background: #66665e;
+//      &:hover {
+//        background: #66665e;
+//        background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+//        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+//        background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+//        background: linear-gradient(#66665e 0%, #45463d 100%);
+//      }
+//      a{
+//        padding: 15px 10px;
+//        text-align: center;
+//        font-size: 1.2em;
+//        span{
+//            display: block;
+//            padding: 12px 10px;
+//
+//        }
+//      }
+//    }
+//    li.active {
+//    }
+//    li.has-sub {
+//      a {
+//        span {
+//        }
+//      }
+//    }
+//    li.has-sub.active{
+//      a{
+//        span{
+//          color: white;
+//        }
+//      }
+//    }
+//  }
+//}
 
-
-.accordionSpec {
-  ul{
-    ul {
-      display: none;
-      background: #fff;
-      border-right: 1px solid #a2a194;
-      border-left: 1px solid #a2a194;
-      a {
-        padding: 10px 10px 10px 25px;
-        display: block;
-        color: #676767;
-        font-size: .8em;
-        &:hover {
-          color: #e94f31;
-        }
-      }
-      li {
-        padding: 0;
-        border-top: none;
-        background: #f7f7f7;
-        background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
-        background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
-        background: linear-gradient(#f7f7f7 0%, #ececec 100%);
-      }
-    }
-    li{
-      background: #66665e;
-      background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
-      background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
-      background: linear-gradient(#66665e 0%, #45463d 100%);
-      -webkit-border-radius: 3px 3px 0 0;
-      -moz-border-radius: 3px 3px 0 0;
-      border-radius: 3px 3px 0 0;
-      &:hover {
-        background: #66665e;
-        background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
-        background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
-        background: linear-gradient(#66665e 0%, #45463d 100%);
-      }
-      a{
-        padding: 15px 10px;
-        border: none;
-        -webkit-border-radius: 3px 3px 0 0;
-        -moz-border-radius: 3px 3px 0 0;
-        border-radius: 3px 3px 0 0;
-        text-align: center;
-        font-size: 1.2em;
-        span{
-            display: block;
-            padding: 12px 10px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-        }
-      }
-    }
-    li.active {
-      color: pink;
-    }
-    li.has-sub {
-      a {
-        span {
-          content: 'f0da';
-        }
-      }
-    }
-    li.has-sub.active{
-      a{
-        span{
-          color: green;
-        }
-      }
+.allspec {
+  width: 100%;
+  display: none;
+  .allspecInner {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .subDiv {
+      width: 20%;
+      height: 50%;
+      background-color: blue;
     }
   }
 }
