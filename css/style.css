@@ -495,13 +495,12 @@ h6 {
   width: 100%;
   display: none; }
   .allspec .allspecInner {
-    background-color: red;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
     .allspec .allspecInner .subDiv {
-      width: 20%;
+      width: 15%;
       height: 50%;
       background-color: blue; }
 
