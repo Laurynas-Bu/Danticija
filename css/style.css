@@ -508,17 +508,12 @@ h6 {
       color: #008be9; }
   .accordionSpec ul ul li {
     width: auto;
-    background: #f7f7f7;
-    background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
-    background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
-    background: linear-gradient(#f7f7f7 0%, #ececec 100%); }
+    background: #f7f7f7; }
 
 .accordionSpec ul li {
   width: 156px;
   height: 40px;
-  background-color: #8ac926;
-  color: white; }
+  background-color: #8ac926; }
   .accordionSpec ul li a {
     text-align: center;
     font-size: 13px; }

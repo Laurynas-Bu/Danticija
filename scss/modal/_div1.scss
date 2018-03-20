@@ -23,17 +23,12 @@
       li {
         width: auto;
         background: #f7f7f7;
-        background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
-        background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
-        background: linear-gradient(#f7f7f7 0%, #ececec 100%);
       }
     }
     li{
       width: 156px;
       height: 40px;
       background-color: #8ac926;
-      color: white;
       &:hover {
       }
       a{
@@ -57,6 +52,8 @@
         span{
           color: white;
         }
+      }
+      ul{
       }
     }
   }
