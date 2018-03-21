@@ -474,18 +474,20 @@ h6 {
       padding: 12px 20px;
       margin: 5px 0;
       border: 1px solid #979796;
-      outline-color: #8ac926;
+      outline: none;
       border-radius: 5px;
       background-color: transparent;
       color: #979796; }
+      .kontent .table ul #name:focus, .kontent .table ul #email:focus, .kontent .table ul #subject:focus, .kontent .table ul #submit:focus {
+        border-color: #8ac926; }
     .kontent .table ul #subject {
       height: 85px;
       resize: none;
-      margin-bottom: 2px; }
+      margin-bottom: 2px;
+      outline: none; }
     .kontent .table ul #submit {
       border-radius: 20px;
       font-weight: 600;
-      outline: none;
       height: 35px;
       line-height: 12.5px;
       margin-bottom: 40px; }
@@ -504,7 +506,8 @@ h6 {
   cursor: pointer;
   font-family: "Avenir Medium", sans-serif;
   color: white;
-  font-size: 14px; }
+  font-size: 14px;
+  border-radius: 7px 0 0 0; }
 
 .allspec {
   width: 100%;
@@ -512,7 +515,7 @@ h6 {
   .allspec .allspecInner {
     display: flex;
     margin: 10px 0 0 12px; }
-    .allspec .allspecInner .subDiv {
+    .allspec .allspecInner .subButton {
       background-color: white;
       text-align: center;
       border: none;
@@ -524,8 +527,10 @@ h6 {
       cursor: pointer; }
 
 #visispec {
-  padding: 25px;
-  top: -10px; }
+  padding-top: 10px;
+  top: -10px;
+  height: 50px;
+  border-radius: 0 0 0 7px; }
 
 .flex {
   display: flex;

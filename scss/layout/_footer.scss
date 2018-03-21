@@ -56,20 +56,23 @@ h6 {
         padding: 12px 20px;
         margin: 5px 0;
         border: 1px solid #979796;
-        outline-color: $green;
+        outline: none;
         border-radius: 5px;
         background-color: transparent;
         color: #979796;
+        &:focus {
+          border-color: $green;
+        }
       }
       #subject{
         height: 85px;
         resize: none;
         margin-bottom: 2px;
+        outline: none;
       }
       #submit {
         border-radius: 20px;
         font-weight: 600;
-        outline: none;
         height: 35px;
         line-height: 12.5px;
         margin-bottom: 40px;
