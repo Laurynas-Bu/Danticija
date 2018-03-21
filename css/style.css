@@ -16,6 +16,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+body button:focus {
+    outline: none;
+}
+
 .container {
     padding-right: 0;
     padding-left: 0;
@@ -491,18 +495,37 @@ h6 {
         color: white;
         cursor: pointer; }
 
+.specbutton {
+  background-color: #8ac926;
+  border: none;
+  margin: 29px 0 0 12px;
+  width: 156px;
+  height: 40px;
+  cursor: pointer;
+  font-family: "Avenir Medium", sans-serif;
+  color: white;
+  font-size: 14px; }
+
 .allspec {
   width: 100%;
   display: none; }
   .allspec .allspecInner {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
+    margin: 10px 0 0 12px; }
     .allspec .allspecInner .subDiv {
-      width: 15%;
-      height: 50%;
-      background-color: blue; }
+      background-color: white;
+      text-align: center;
+      border: none;
+      position: relative;
+      width: 156px;
+      height: 40px;
+      font-family: "Avenir Medium", sans-serif;
+      font-size: 14px;
+      cursor: pointer; }
+
+#visispec {
+  padding: 25px;
+  top: -10px; }
 
 .flex {
   display: flex;

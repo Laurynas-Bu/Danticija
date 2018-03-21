@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
+  button:focus {outline: none}
 }
 .container {
   padding-right: 0;
