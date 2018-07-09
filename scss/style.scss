@@ -17,9 +17,8 @@ body {
   button:focus {outline: none}
 }
 .container {
-  padding-right: 0;
-  padding-left: 0;
-  max-width: 1200px;
+  margin: auto;
+  width: 1200px;
 }
 
 .row {

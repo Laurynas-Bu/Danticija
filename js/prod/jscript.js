@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     var modal, span, body, addTo;
 
-    modal = document.getElementById('div2');
+    modal = document.getElementById('div1');
     span = document.getElementsByClassName("close")[0];
     body = document.querySelector('body');
     addTo = document.getElementById('addto');
@@ -10,7 +10,6 @@ $(document).ready(function () {
     $('#regbtn1, #regbtn2').click(function () {
         modal.style.display = "block";
         body.style.overflow = "hidden";
-
     });
 
     span.onclick = function () {
@@ -2278,9 +2277,7 @@ $(document).ready(function () {
  })(window, jQuery);
 
 
-
 $(document).ready(function () {
-
 
      var newArray = [
          {
@@ -2354,14 +2351,13 @@ $(document).ready(function () {
              for(var i = 0; i < newArray.length; i++){
                  $daysByType = $daysByType.concat(newArray[i].days);
              }
-
              $daysByType = uniq($daysByType);
 
          }else{
              var $daysByType = newArray[$selectedDayTypeIndex].days;
          }
 
-         // $daysByType = $daysByType.sort(function(a, b){return a-b});
+         $daysByType = $daysByType.sort(function(a, b){return a-b});
 
          var eventDates = $daysByType,
              $picker = $('#custom-cells'),
@@ -2369,13 +2365,13 @@ $(document).ready(function () {
 
              date = new Date(),
              maxdate = new Date();
-             maxdate.setMonth(date.getMonth() + 2);
+             maxdate.setMonth(date.getMonth() + 3);
 
-         // function uniq(a) {
-         //     return a.sort().filter(function(item, pos, ary) {
-         //         return !pos || item != ary[pos - 1];
-         //     })
-         // }
+         function uniq(a) {
+             return a.sort().filter(function(item, pos, ary) {
+                 return !pos || item != ary[pos - 1];
+             })
+         }
 
          function getTimes(data, selectedDay, filter) {
              var dayIndex = 0;
@@ -2443,12 +2439,11 @@ $(document).ready(function () {
          $picker.data('datepicker').selectDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), 22));
      });
 
-     // function uniq(a) {
-     //     return a.sort().filter(function(item, pos, ary) {
-     //         return !pos || item != ary[pos - 1];
-     //     })
-     // }
-
+     function uniq(a) {
+         return a.sort().filter(function(item, pos, ary) {
+             return !pos || item != ary[pos - 1];
+         })
+     }
 
      function getTimes(data, selectedDay, filter) {
          var dayIndex = 0;

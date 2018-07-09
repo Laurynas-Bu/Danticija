@@ -10,7 +10,6 @@ $(document).ready(function () {
     $('#regbtn1, #regbtn2').click(function () {
         modal.style.display = "block";
         body.style.overflow = "hidden";
-
     });
 
     span.onclick = function () {
